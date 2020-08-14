@@ -1,14 +1,19 @@
 {
     "env": {
-        "es2020": true,
+        "es6": true,
         "node": true
     },
     "extends": [
-        "standard"
+        "standard",
+        "plugin:@typescript-eslint/recommended"
     ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": 11,
+        "ecmaVersion": 2018,
         "sourceType": "module"
     },
     "plugins": [
